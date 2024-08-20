@@ -1,0 +1,43 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import CTA from "@components/CTA.astro";
+import PageTitle from "@components/Page-Title.astro";
+import TopCountries from "../components/TopCountries.astro";
+ import EuropeContent from "@components/EuropeContent.astro";
+import OurPartners from "@components/OurPartners.astro";
+import Testimonials from "@components/Testimonials.astro";
+import Contact from "@components/Contact.astro";
+import FAQ_Europe from "@components/FAQ_Europe.astro"
+import TabComponentEurope from "@components/TabComponentEurope.astro"
+import TopCanadaUniversities from "@components/TopCanadaUniversities.astro";
+
+
+import pageBannerImg from "@assets/img/country-img/europe-banner.jpg";
+import TopEuropeUniversities from "./TopEuropeUniversities.astro";
+import TopUkUniversities from "./TopUkUniversities.astro"
+
+const pageTitle = "Study in Europe: Top Universities & Colleges, Admission, Fees | A One Global";
+const pageDescription = "Research in Europe For students in India, Discover every information on European Universities, Courses Offered, Costs and Structure, Tuition, Application Process, Acceptance, Visas, and Scholarships.";
+const pageKeywords = "";
+const pageAuthor = "";
+const pageBanner = { url: pageBannerImg.src };
+---
+
+<!-- src/pages/index.astro -->
+<MainLayout title={pageTitle} description={pageDescription} keywords={pageKeywords} author={pageAuthor}>
+  <main>
+    <PageTitle title="Study in Europe" banner={pageBanner} />
+
+    <EuropeContent/>
+    <div class="section-divider"></div>
+    <CTA />
+    <TopUkUniversities />
+    <TabComponentEurope/>
+    <FAQ_Europe/>
+    
+    <!-- <Testimonials /> -->
+    <TopCountries />
+    <OurPartners />
+    <Contact />
+  </main>
+</MainLayout>

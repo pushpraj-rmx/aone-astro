@@ -1,0 +1,24 @@
+---
+// components
+import MainLayout from "../layouts/MainLayout.astro";
+import TeamArea from "@components/TeamArea.astro";
+import PageTitle from "@components/Page-Title.astro";
+import TeamHeader from "@components/TeamHeader.astro";
+import Contact from "@components/Contact.astro";
+import pageBannerImg from "@assets/img/team-bg.jpg";
+const pageBanner = { url: pageBannerImg.src };
+
+const pageTitle = "Our Team";
+const pageDescription = "";
+const pageKeywords = "";
+const pageAuthor = "";
+---
+
+<MainLayout title={pageTitle} description={pageDescription} keywords={pageKeywords} author={pageAuthor}>
+  <main>
+    <PageTitle title="Our Team" banner={pageBanner} />
+    <TeamHeader />
+    <TeamArea />
+    <Contact />
+  </main>
+</MainLayout>

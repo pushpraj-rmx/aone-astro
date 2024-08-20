@@ -1,0 +1,75 @@
+---
+import Image from "astro/components/Image.astro";
+import mbbsImg from "@assets/img/mbbs.jpg";
+---
+
+<section>
+  <div class="united-stats-area pt-120">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="united-states">
+            <style>
+              .text-center {
+                text-align: center !important;
+              }
+
+              .tab-pane {
+                display: none;
+              }
+              .tab-pane.active {
+                display: block;
+              }
+              .nav-tabs {
+                flex-direction: column;
+              }
+              .nav-tabs .nav-link {
+                border: 1px solid #dee2e6;
+                border-radius: 0.25rem;
+                margin-bottom: 0.5rem;
+              }
+              .nav-tabs .nav-link.active {
+                background-color: #007bff;
+                color: white;
+              }
+            </style>
+
+            <h2 class="united-states__title mb-15">Studying MBBS Abroad: Eligibility, Colleges, Fees, and Examinations</h2>
+
+            <p>
+              Studying MBBS abroad (Bachelor of Medicine, Bachelor of Surgery) is becoming increasingly popular among Indian students. In India, MBBS seats are very few, and many students fight for
+              them.
+            </p>
+            <p>
+              This makes it difficult for many students to get admission. As a result, many Indian candidates prefer to study MBBS abroad, believing that their chances of admission will be higher.
+            </p>
+            <p class="mb-30">
+              They also believe that studying MBBS abroad will give them better chances of working around the world as a doctor. This trend reflects how Indian students are searching beyond their
+              country for better education and employment opportunities in medicine.
+            </p>
+
+            <h3 >Reasons that attract students to study MBBS Abroad:</h3>
+
+            <ul class="mb-30">
+              <li style="list-style-type: disc;">Here you get access to enroll in top tier medical education programs</li>
+              <li style="list-style-type: disc;">Here you get the opportunity to learn with experienced international faculty</li>
+              <li style="list-style-type: disc;">There is ample exposure to medical technology and facilities</li>
+              <li style="list-style-type: disc;">There is a multicultural atmosphere which makes the global perspective stronger</li>
+              <li style="list-style-type: disc;">Possibility of studying in globally recognized renowned universities</li>
+              <li style="list-style-type: disc;">International students get scholarships and financial help</li>
+              <li style="list-style-type: disc;">Opportunity to do internship in prominent hospitals when they provide practical training</li>
+            </ul>
+            
+          </div>
+          <div class="cta-wrap" style="display: flex; align-items: center; justify-content: start;">
+            <span class="col-6 theme-btn" style="margin-right: 20px;">Read More</span>
+            <span class="col-6 theme-btn2">Get Assistance</span>
+          </div>
+        </div>
+        <div class="col-6">
+          <Image src={mbbsImg} alt="Australia Image" width="600" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

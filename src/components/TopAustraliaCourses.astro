@@ -1,0 +1,76 @@
+---
+import { Image } from "astro:assets";
+import medicalImage from "@assets/img/courses/medical.webp";
+import managementImage from "@assets/img/courses/management.svg";
+import engineeringImage from "@assets/img/courses/engineering.jpg";
+---
+
+<section>
+  <div class="pt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-xxl-6 col-xl-6 col-lg-6 mb-4">
+          <h2>Top Courses in Australia</h2>
+        </div>
+      </div>
+      <style>
+        .card-courses {
+          border-radius: 10px;
+          box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+          background-color: #fff;
+          padding: 15px;
+          transition: 0.4s;
+        }
+      </style>
+      <div class="row">
+        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 mb-4">
+          <div class="card-courses">
+            <div>
+              <div>
+                <a href=""><Image src={managementImage} alt="" class="img-fluid" /> </a>
+              </div>
+              <div>
+                <h3 class="mt-3 mb-4">
+                  <a href="">Management Courses</a>
+                </h3>
+                <p>Gain global business insights and leadership skills from top international institutions in Australia.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 mb-4">
+          <div class="card-courses">
+            <div>
+              <div>
+                <a href=""><Image src={medicalImage} alt="" class="img-fluid" /> </a>
+              </div>
+              <div>
+                <h3 class="mt-3 mb-4">
+                  <a href="">Medical Courses</a>
+                </h3>
+                <p>Pursue advanced medical education and training at world-renowned universities in Australia.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 mb-4">
+          <div class="card-courses">
+            <div>
+              <div>
+                <a href=""><Image src={engineeringImage} alt="" class="img-fluid" /> </a>
+              </div>
+              <div>
+                <h3 class="mt-3 mb-4">
+                  <a href="">Engineering Courses</a>
+                </h3>
+                <p>Study cutting-edge engineering &amp; technology programs that offer hands-on experience in Australia.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,65 @@
+---
+import Contact from "@components/Contact.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+
+const pageTitle = "Colleges and Universities Admission | A One Global";
+const pageDescription = "Examine the easy admissions procedures at prestigious worldwide universities and colleges. From the start to the finish, we provide you with guidance.";
+const pageKeywords = "";
+const pageAuthor = "";
+---
+
+<!-- src/pages/index.astro -->
+<MainLayout title={pageTitle} description={pageDescription} keywords={pageKeywords} author={pageAuthor}>
+  <main>
+    <div class="container details">
+      <div class="row">
+        <div class="col-md-6 text-content">
+          <h1>
+            Expert guidance on finding the best colleges or universities to
+            study abroad  
+          </h1>
+          <p style="text-align: justify">
+            With many options to choose from for higher studies in an
+            international land, it is common to be confused and need guidance
+            to choose the one that could offer the best features according to
+            your needs. Our experts can help you find and select the best
+            foreign colleges and universities for your undergraduate,
+            postgraduate, and Ph.D. degrees considering your interests,
+            educational background, and financial situation. However, the
+            selection of a college or university is the beginning of our
+            journey, our assistance continues beyond there.
+          </p>
+          <p style="text-align: justify">
+            A One Global also helps in the university application and
+            enrollment process. From filling up lengthy application forms to
+            writing Statements of Purpose (SoP), we guide our students to ace
+            every step of the application process.
+          </p>
+          <a href="#book" class="custom-btn">Book an appointment</a>
+        </div>
+        <div class="col-md-6 img-div">
+          <img
+            width="433"
+            height="465"
+            src="https://theaoneglobal.com/wp-content/webp-express/webp-images/uploads/2021/12/09.-College.png.webp"
+            class="attachment-full size-full"
+            alt=""
+            decoding="async"
+            srcset="
+              https://theaoneglobal.com/wp-content/webp-express/webp-images/uploads/2021/12/09.-College.png.webp         433w,
+              https://theaoneglobal.com/wp-content/webp-express/webp-images/uploads/2021/12/09.-College-279x300.png.webp 279w,
+              https://theaoneglobal.com/wp-content/webp-express/webp-images/uploads/2021/12/09.-College-361x388.png.webp 361w
+            "
+            sizes="(max-width: 433px) 100vw, 433px"
+          />
+        </div>
+        <div class="col-12 notice-section">
+          <p>Be awarded</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <Contact />
+    </div>
+  </main>
+</MainLayout>

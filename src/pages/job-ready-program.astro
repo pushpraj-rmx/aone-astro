@@ -1,0 +1,89 @@
+---
+import Contact from "@components/Contact.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+
+const pageTitle = "Job Ready Programs | A One Global";
+const pageDescription = "Put yourself in a successful position by enrolling in courses that will prepare you for study abroad employment. Learn everything there is to know about job programs.";
+const pageKeywords = "";
+const pageAuthor = "";
+---
+
+<!-- src/pages/index.astro -->
+<MainLayout title={pageTitle} description={pageDescription} keywords={pageKeywords} author={pageAuthor}>
+  <main>
+    <div class="container details">
+      <div class="row">
+        <div class="col-md-6 text-content">
+          <h1>What is a Job Ready Program for an international student?</h1>
+          <p style="text-align: justify">
+            Job-ready program is an educational activity aimed at preparing
+            full-time students for the workforce. These programs are intended
+            to provide participants with the abilities, information, and
+            expertise required for success in their chosen careers. This can
+            comprise a variety of training and workshops like practicing for
+            interviews and job searches, creating a résumé, and attending
+            workshops on skill development. It is a professional development
+            program that prepares the students to be ready for the job market
+            while also providing insights on the right job roles and
+            responsibilities of different levels of positions. With this
+            program, the individuals are also informed regarding the
+            organizational culture in their professional environment and
+            work-life balance in general.
+          </p>
+          <p style="text-align: justify">
+            <span style="font-weight: 400"
+              >Partnered universities and colleges of A One Global Consultants
+              offer this program to the students who plan on doing their
+              undergrad degrees from the concerned institute. These
+              initiatives aid participants in networking with business
+              executives and job-seeking assistance. If you choose to pursue a
+              profession in the host nation, this program will be among the
+              most beneficial.</span
+            >
+          </p>
+          <p style="text-align: justify">
+            Besides this, we also strongly advice our prospective students who
+            are enrolled in our English test preparation classes or pushing
+            ahead with their documentation to also utilize their time by
+            gaining skills that will help them become more eligible for Part
+            Time Jobs in their destination countries.
+          </p>
+          <p>Some of the Skills one can gain are ;</p>
+          <ol type="1">
+            <li>Data Entry</li>
+            <li>Content Writer</li>
+            <li>Driving License</li>
+            <li>Barista</li>
+            <li>Baker</li>
+            <li>Waiting Staff</li>
+            <li>Cook | Kitchen Hand</li>
+            <li>Cashier</li>
+          </ol>
+          <a href="#book" class="custom-btn">Book an appointment</a>
+        </div>
+        <div class="col-md-6 img-div">
+          <img
+            width="433"
+            height="465"
+            src="https://theaoneglobal.com/wp-content/webp-express/webp-images/uploads/2021/12/02.-Job-Training.png.webp"
+            class="attachment-full size-full"
+            alt=""
+            decoding="async"
+            srcset="
+              https://theaoneglobal.com/wp-content/webp-express/webp-images/uploads/2021/12/02.-Job-Training.png.webp         433w,
+              https://theaoneglobal.com/wp-content/webp-express/webp-images/uploads/2021/12/02.-Job-Training-279x300.png.webp 279w,
+              https://theaoneglobal.com/wp-content/webp-express/webp-images/uploads/2021/12/02.-Job-Training-361x388.png.webp 361w
+            "
+            sizes="(max-width: 433px) 100vw, 433px"
+          />
+        </div>
+        <div class="col-12 notice-section">
+          <p>The expert in anything was once a beginner</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <Contact />
+    </div>
+  </main>
+</MainLayout>

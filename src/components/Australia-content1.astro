@@ -1,0 +1,62 @@
+---
+import Image from "astro/components/Image.astro";
+import australiaImg from "@assets/img/country-img/melbourne.webp";
+---
+
+<section>
+  <div class="united-stats-area pt-120">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="united-states">
+            <!-- <div class="united-states__thumb mb-40">
+              <img src="assets/img/united-states/united-details.jpg" alt="" />
+            </div> -->
+            <style>
+              .text-center {
+                text-align: center !important;
+              }
+
+              .tab-pane {
+                display: none;
+              }
+              .tab-pane.active {
+                display: block;
+              }
+              .nav-tabs {
+                flex-direction: column;
+              }
+              .nav-tabs .nav-link {
+                border: 1px solid #dee2e6;
+                border-radius: 0.25rem;
+                margin-bottom: 0.5rem;
+              }
+              .nav-tabs .nav-link.active {
+                background-color: #007bff;
+                color: white;
+              }
+            </style>
+            <h2 class="united-states__title mb-15">Study in Australia</h2>
+            <!-- <Image src={australiaImg} alt="" height="500"/> -->
+            <p class="mb-30">
+              Study in Australia implies getting extraordinary schooling in an energetic spot. Australia is known for its first rate education and cool research labs. There are countless courses to
+              look over, so you can concentrate on anything you like.
+            </p>
+            <p class="mb-25">
+              The combination of academic excellence, cultural diversity, and breathtaking landscapes that Australia has to offer is one of a kind. Students can acquire valuable skills and knowledge
+              in their chosen fields through world-class universities and innovative teaching methods. Australia's vibrant cities, stunning natural beauty, and friendly locals offer a rich and
+              satisfying experience beyond academia. Australia awaits to inspire, challenge, and empower you to reach new heights in your academic and personal endeavours.
+            </p>
+          </div>
+          <div class="cta-wrap" style="display: flex; align-items: center; justify-content: start;">
+            <span class="col-6 theme-btn" style="margin-right: 20px;">Read More</span>
+            <span class="col-6 theme-btn2">Get Assistance</span>
+          </div>
+        </div>
+        <div class="col-6">
+          <Image src={australiaImg} alt="Australia Image" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

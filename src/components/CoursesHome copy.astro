@@ -1,0 +1,60 @@
+---
+import { Image } from "astro:assets";
+// import coaching_1 from "@assets/img/coaching/medium.webp";
+import undergraduateBadge from "@assets/img/badges/Undergraduate.png";
+// import postgraduateBadge from "@assets/img/badges/Postgraduate.png";
+
+// import engineering from "@assets/img/courses/bba.png"
+// other imports here ...
+---
+
+<section>
+  <div class="courses-area pt-120 wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+    <div class="container">
+      <div class="row">
+        <div class="col-xxl-6 col-xl-6 col-lg-6 mb-45">
+          <h2 class="section-title">Most Ranked Courses</h2>
+        </div>
+        <div class="col-xxl-6 col-xl-6 col-lg-6">
+          <div class="project-filter course-filter">
+            <ul>
+              <li class="active" data-filter="*">See All</li>
+              <li data-filter=".management">Management</li>
+              <li data-filter=".engineering">Engineering</li>
+              <li data-filter=".medical">Medical</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row project-grid">
+        <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 training courses mb-40">
+          <div class="courses">
+            <div class="courses__thumb">
+              <div class="courses__thumb-img">
+                <!-- <a href=""><Image src={bbaImg} alt="" /> </a> -->
+              </div>
+              <div class="courses__thumb-logo mr-15">
+                <a href="">
+                  <Image  src={undergraduateBadge} alt=""></a>
+                </a>
+              </div>
+              <div class="courses-content">
+                <h3 class="courses-content__title mt-15 mb-25">
+                  <a href="">Internation English Language Testing Systems (IELTS)</a>
+                </h3>
+                <p>We also help with other family based based and investment based Immigration.</p>
+              </div>
+              <div class="courses__meta">
+                <ul>
+                  <li><a class="border-none" href="#"><i class="far fa-clock"></i> 03 Month</a></li>
+                  <li><a href=""><i class="fas fa-list-ul"></i> 28 Classes</a></li>
+                  <li><a href="" class="course-link-btn">Details <i class="fas fa-arrow-right"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

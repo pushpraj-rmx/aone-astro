@@ -1,0 +1,66 @@
+---
+import Image from "astro/components/Image.astro";
+import lifeInAustralia from "@assets/img/life-in-australia.jpg";
+---
+
+<div class="container mt-120">
+  <div class="life-container">
+    <div class="image-section col-12 col-md-6">
+      <Image src={lifeInAustralia} alt="Life in Australia" />
+    </div>
+    <div class="col-12 col-md-6" style="display: flex; align-items: center; justify-content: center; flex-direction: column; ">
+      <div class="text-section">
+        <h2>Life in Australia</h2>
+        <p style="">
+          Australia's vibrant and varied life for international students combines academic excellence, cultural diversity, and natural beauty. In this dynamic and multicultural nation, students can
+          pursue their educational objectives while immersing themselves in a welcoming community, exploring stunning landscapes, and enjoying a high quality of life.
+        </p>
+        <a href="#" class="button">Find out more</a>
+      </div>
+    </div>
+
+    <style>
+      .life-container {
+        max-height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #0d5ba4;
+        color: white;
+      }
+      .image-section img {
+        max-width: 100%;
+        height: 400px;
+      }
+
+      .text-section {
+        padding:;
+        max-width: 400px;
+      }
+
+      .text-section h1 {
+        font-size: 2em;
+        margin-bottom: 10px;
+        color: #ffdddd;
+      }
+
+      .text-section p {
+        margin-bottom: 20px;
+        color: white;
+      }
+
+      .button {
+        background-color: #ffffff;
+        color: #0d5ba4;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+      }
+
+      .button:hover {
+        background-color: #f0f0f0;
+      }
+    </style>
+  </div>
+</div>

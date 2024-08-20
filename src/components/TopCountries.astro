@@ -1,0 +1,122 @@
+---
+import Image from "astro/components/Image.astro";
+// country images
+import USAImage from "@assets/img/country-img/usa.jpg";
+import UKImage from "@assets/img/country-img/uk.jpg";
+import AustraliaImage from "@assets/img/country-img/australia.jpg";
+import CanadaImage from "@assets/img/country-img/canada.jpg";
+// flag images
+import USAFlag from "@assets/img/country-img/us_flag.png";
+import UKFlag from "@assets/img/country-img/uk_flag.png";
+import AustraliaFlag from "@assets/img/country-img/australia_flag.png";
+import CanadaFlag from "@assets/img/country-img/canada_flag.png";
+---
+
+<div class="most-countries pt-100 pb-90">
+  <div class="container">
+    <div class="row d-flex align-items-center">
+      <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
+        <div class="section_title_wrapper mb-25">
+          <h2 class="section-title">Popular Study Destinations</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 mb-30">
+        <div class="countries-item img-top">
+          <div class="countries-item__top">
+            <div class="countries-item__top-img">
+              <Image src={USAImage} alt="" />
+              <div class="countries-item__top-img-link">
+                <a href="/study-in-usa"><i class="fas fa-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="countries-item__bottom d-flex align-items-center">
+            <div class="countries-item__bottom-img mr-20">
+              <Image src={USAFlag} alt="" />
+            </div>
+            <div class="countries-item__bottom-content">
+              <p class="countries-item__bottom-content-title">
+                <a href="/study-in-usa">United States</a>
+              </p>
+              <!-- <p>58 Universities</p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 mb-30">
+        <div class="countries-item img-top">
+          <div class="countries-item__top">
+            <div class="countries-item__top-img">
+              <Image src={UKImage} alt="" />
+              <div class="countries-item__top-img-link">
+                <a href="/study-in-uk"><i class="fas fa-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="countries-item__bottom d-flex align-items-center">
+            <div class="countries-item__bottom-img mr-20">
+              <Image src={UKFlag} alt="" />
+            </div>
+            <div class="countries-item__bottom-content">
+              <p class="countries-item__bottom-content-title">
+                <a href="/study-in-usa">United Kingdom</a>
+              </p>
+              <!-- <p>33 Universities</p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 mb-30">
+        <div class="countries-item img-top">
+          <div class="countries-item__top">
+            <div class="countries-item__top-img">
+              <Image src={AustraliaImage} alt="" />
+              <div class="countries-item__top-img-link">
+                <a href="/study-in-australia"><i class="fas fa-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="countries-item__bottom d-flex align-items-center">
+            <div class="countries-item__bottom-img mr-20">
+              <Image src={AustraliaFlag} alt="" />
+            </div>
+            <div class="countries-item__bottom-content">
+              <p class="countries-item__bottom-content-title">
+                <a href="/study-in-australia">Australia</a>
+              </p>
+              <!-- <p>33 Universities</p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 mb-30">
+        <div class="countries-item img-top">
+          <div class="countries-item__top">
+            <div class="countries-item__top-img">
+              <Image src={CanadaImage} alt="" />
+              <div class="countries-item__top-img-link">
+                <a href="/study-in-canada"><i class="fas fa-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="countries-item__bottom d-flex align-items-center">
+            <div class="countries-item__bottom-img mr-20">
+              <Image src={CanadaFlag} alt="" />
+            </div>
+            <div class="countries-item__bottom-content">
+              <p class="countries-item__bottom-content-title">
+                <a href="/study-in-canada">Canada</a>
+              </p>
+              <!-- <p>33 Universities</p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

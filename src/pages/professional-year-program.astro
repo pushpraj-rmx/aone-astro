@@ -1,0 +1,72 @@
+---
+import Contact from "@components/Contact.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+
+const pageTitle = "Professional Year Program | A One Global";
+const pageDescription = "With our Professional Year Program with A One Global Consultants, you may close the gap to a prosperous career. Get in touch with us right now!";
+const pageKeywords = "";
+const pageAuthor = "";
+---
+
+<!-- src/pages/index.astro -->
+<MainLayout title={pageTitle} description={pageDescription} keywords={pageKeywords} author={pageAuthor}>
+  <main>
+    <div class="container details">
+      <div class="row">
+        <div class="col-md-6 text-content">
+          <h1>What is a professional year program (PYP)?</h1>
+          <p style="text-align: justify">
+            <span style="font-weight: 400"
+              >A professional year program (PYP) is an organized training 
+              program given to overseas students in an attempt to provide a
+              platform to learn the method of implementing the theoretical
+              knowledge studied in their college study. This program is
+              focused on international students in Australia. It usually lasts
+              for a year and combines formal education with real-world
+              experience to assist students in bridging the gap between school
+              and career paths. The curriculum is frequently provided in
+              collaboration with universities, TAFEs, or professional
+              associations and is specially created to satisfy the needs of
+              students who are majoring in specialized fields including
+              engineering, information technology, and accounting.</span
+            >
+          </p>
+          <p style="text-align: justify">
+            <span style="font-weight: 400"
+              >The primary goal of PYP is to help students develop their
+              professional skills and gain relevant work experience while
+              studying for their undergrad degree to improve their chances of
+              securing employment after graduation. The partnered universities
+              of A One Global also offer this program which adds value to your
+              four years of hard work in college and makes you eligible for
+              better job opportunities at your preferred career path.</span
+            >
+          </p>
+          <a href="#book" class="custom-btn">Book an appointment</a>
+        </div>
+        <div class="col-md-6 img-div">
+          <img
+            width="433"
+            height="465"
+            src="https://theaoneglobal.com/wp-content/webp-express/webp-images/uploads/2021/12/07.-visa-migration.png.webp"
+            class="attachment-full size-full"
+            alt=""
+            decoding="async"
+            srcset="
+              https://theaoneglobal.com/wp-content/webp-express/webp-images/uploads/2021/12/07.-visa-migration.png.webp         433w,
+              https://theaoneglobal.com/wp-content/webp-express/webp-images/uploads/2021/12/07.-visa-migration-279x300.png.webp 279w,
+              https://theaoneglobal.com/wp-content/webp-express/webp-images/uploads/2021/12/07.-visa-migration-361x388.png.webp 361w
+            "
+            sizes="(max-width: 433px) 100vw, 433px"
+          />
+        </div>
+        <div class="col-12 notice-section">
+          <p>The greatest value of knowledge is its application</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <Contact /> 
+    </div>
+  </main>
+</MainLayout>

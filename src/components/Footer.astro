@@ -1,0 +1,197 @@
+---
+import logo from "@assets/img/logo/logo.webp";
+import { Image } from "astro:assets";
+
+
+
+---
+
+<footer class="footer-area pt-95" style="position: relative;">
+  <div class="animated-footer" style="position:absolute; top:0;height:100%; z-index: -1;">
+    <div class="city-background"></div>
+    <div class="plane"></div>
+    <div class="overlay"></div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6">
+        <div class="footer-widget footer-2 footer-btm-mobile ml-30">
+          <p class="h3 oswald footer-widget__title mb-25">Services</p>
+          <ul class="footer-widget_menu-link">
+            <li><a href="/sop-interview-preparation">SOP & Interview Preparation</a></li>
+            <li><a href="/job-ready-program">Job Ready Program</a></li>
+            <li><a href="/professional-year-program">Professional Year Program</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6">
+        <div class="footer-widget footer-4 footer-btm-mobile ml-40">
+          <p class="h3 oswald footer-widget__title mb-25">Test Preparation</p>
+          <ul class="footer-widget_menu-link">
+            <li><a href="/ielts-test-preparation">IELTS Test Preparation</a></li>
+            <li><a href="/pte-test-preparation">PTE Test Preparation</a></li>
+            <li><a href="/sat-test-preparation">SAT Test Preparation</a></li>
+            <li><a href="/toefl-preparation">TOEFL Preparation</a></li>
+            <li><a href="/interview-preparation"> Interview Preparation</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6">
+        <div class="footer-widget footer-3 footer-btm-mobile ml-50">
+          <p class="h3 oswald footer-widget__title mb-25">Useful Links</p>
+          <ul class="footer-widget_menu-link">
+            <li><a href="/contact-us">Contact Us</a></li>
+            <li><a href="/our-team">Our Team</a></li>
+            <li><a href="/branches">Branches</a></li>
+            <li><a href="/terms-and-conditions">Terms & Conditions</a></li>
+            <li><a href="/privacy-policy">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+        <div class="faqfrm__visa custom">
+          <p class="h3 oswald footer-widget__title mb-25">Get in Touch</p>
+          <div class="faqfrm__visa-form">
+            <form action="#">
+              <input type="text" placeholder="Name*" aria-label="Name" required />
+              <input type="email" placeholder="Email*" aria-label="Email" required />
+              <input type="tel" placeholder="Phone*" aria-label="Phone" required />
+              <button class="theme-btn" type="submit">Submit Now</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-copyright-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12">
+          <div class="row copyright-bottom-padding align-items-center">
+            <!-- <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 text-center"> -->
+            <div class="copyright-bottom text-center">
+              <p>©2024 <a href="#">A One Global</a>. All Rights Reserved.</p>
+            </div>
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="whatsapp">
+    <a href="https://wa.me/+919821670673" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <div class="call-button">
+    <a href="tel:+919821670673">
+      <i class="fas fa-phone-alt"></i>
+    </a>
+  </div>
+
+  <style>
+    .call-button {
+      opacity: 0.8;
+      position: fixed;
+      bottom: 30px;
+      right: 20px;
+      z-index: 9999;
+      background-color: #025bc0;
+      color: #fff;
+      width: 47px;
+      height: 47px;
+      text-align: center;
+      line-height: 47px;
+      border-radius: 50%;
+      font-size: 20px;
+      cursor: pointer;
+      transition: all 0.3s;
+      text-decoration: none;
+    }
+
+    .whatsapp {
+      opacity: 0.8;
+      position: fixed;
+      bottom: 90px;
+      right: 20px;
+      z-index: 9999;
+      background-color: #25d366;
+      color: #fff;
+      width: 47px;
+      height: 47px;
+      text-align: center;
+      line-height: 47px;
+      border-radius: 50%;
+      font-size: 32px;
+      cursor: pointer;
+      transition: all 0.3s;
+      text-decoration: none;
+    }
+
+    .overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7); /* Adjust the color and transparency as needed */
+    }
+
+    .animated-footer {
+      position: absolute;
+      width: 100%;
+      height: 250px; /* Adjust as needed */
+      overflow: hidden;
+    }
+
+    .city-background {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: url("../assets/img/landscape.webp") repeat-x;
+      background-size: cover;
+      background-position: center;
+      animation: scrollBackground 40s linear infinite;
+    }
+
+    @keyframes scrollBackground {
+      0% {
+        background-position: 0 0;
+      }
+      100% {
+        background-position: -10000px 0;
+      }
+    }
+
+    .plane {
+      position: absolute;
+      top: 100px;
+      left: 100px;
+      width: 100px; /* Adjust as needed */
+      height: 50px; /* Adjust as needed */
+      background: url("../assets/img/plane.png") no-repeat;
+      background-size: contain;
+      animation: flyPlane 10s linear infinite;
+    }
+
+    @keyframes flyPlane {
+      0% {
+        left: 50; /* Fly off the left edge */
+        top: 20%; /* Adjust as needed */
+      }
+      50% {
+        left: 50; /* Center of the screen */
+        top: 30%; /* Adjust as needed */
+      }
+      100% {
+        left: 50; /* Fly off the right edge */
+        top: 20%; /* Adjust as needed */
+      }
+    }
+  </style>
+</footer>

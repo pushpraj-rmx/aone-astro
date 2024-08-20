@@ -1,0 +1,45 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import CTA from "@components/CTA.astro";
+import PageTitle from "@components/Page-Title.astro";
+import TopCanadaCourses from "@components/TopCanadaCourses.astro";
+import WhyChooseCanada from "@components/WhyChooseCanada.astro";
+import CanadaContent1 from "@components/Canada-content1.astro";
+import TopCanadaUniversities from "@components/TopCanadaUniversities.astro";
+import TopCountries from "../components/TopCountries.astro";
+import OurPartners from "@components/OurPartners.astro";
+import FAQ_Canada from "@components/FAQ_Canada.astro";
+import Testimonials from "@components/Testimonials.astro";
+import Contact from "@components/Contact.astro";
+import LifeInCanada from "@components/Life_in_Canada.astro";
+import TabComponentCanada from "@components/TabComponentCanada.astro";
+// images
+import pageBannerImg from "@assets/img/country-img/canada-banner.jpg";
+
+const pageTitle = "Study in Canada - Top Colleges , Fees, Scholarships, Admission Process | AOne Global";
+const pageDescription = "Are You Planning to Study in Canada -  Explore the Canadian study experience, covering top universities, fees, courses, and the admission process.";
+const pageKeywords = "";
+const pageAuthor = "";
+
+const pageBanner = { url: pageBannerImg.src };
+---
+
+<!-- src/pages/index.astro -->
+<MainLayout title={pageTitle} description={pageDescription} keywords={pageKeywords} author={pageAuthor}>
+  <main>
+    <PageTitle title="Study in Canada" banner={pageBanner} />
+    <CanadaContent1 />
+    <div class="section-divider"></div>
+    <CTA />
+    <TopCanadaUniversities/>
+    <TopCanadaCourses />
+    <WhyChooseCanada />
+    <LifeInCanada />
+    <TabComponentCanada />
+    <FAQ_Canada />
+    <Testimonials />
+    <TopCountries />
+    <OurPartners />
+    <Contact />
+  </main>
+</MainLayout>

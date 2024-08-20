@@ -1,0 +1,49 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import CTA from "@components/CTA.astro";
+import PageTitle from "@components/Page-Title.astro";
+import TopCanadaCourses from "@components/TopCanadaCourses.astro";
+import WhyChooseCanada from "@components/WhyChooseCanada.astro";
+// import CanadaContent1 from "@components/Canada-content1.astro";
+import MBBSContent1 from "@components/mbbs-content1.astro";
+import MBBSContent2 from "@components/mbbs-content2.astro";
+import TopCanadaUniversities from "@components/TopCanadaUniversities.astro";
+import TopCountries from "../components/TopCountries.astro";
+import OurPartners from "@components/OurPartners.astro";
+import FAQ_mbbs from "@components/FAQ_mbbs.astro";
+import Testimonials from "@components/Testimonials.astro";
+import Contact from "@components/Contact.astro";
+import LifeInCanada from "@components/Life_in_Canada.astro";
+import TabComponentCanada from "@components/TabComponentCanada.astro";
+// images
+import pageBannerImg from "@assets/img/country-img/canada-banner.jpg";
+
+const pageTitle = "Top countries, exams, admissions procedure, requirements for Indian students pursuing an MBBS abroad | A One Global";
+const pageDescription = "Do you intend to pursue an MBBS abroad? Learn about chosen nations' requirements for admission, costs, benefits, potential future growth, and more for Indian students pursuing affinity education.";
+const pageKeywords = "";
+const pageAuthor = "";
+
+const pageBanner = { url: pageBannerImg.src };
+---
+
+<!-- src/pages/index.astro -->
+<MainLayout title={pageTitle} description={pageDescription} keywords={pageKeywords} author={pageAuthor}>
+  <main>
+    <PageTitle title="MBBS Abroad" banner={pageBanner} />
+    <!-- <CanadaContent1 /> -->
+    <MBBSContent1 />
+    <div class="section-divider"></div>
+    <CTA />
+    <!-- <TopCanadaUniversities/> -->
+    <!-- <TopCanadaCourses /> -->
+    <!-- <WhyChooseCanada /> -->
+    <!-- <LifeInCanada /> -->
+    <MBBSContent2 />
+    <!-- <TabComponentCanada /> -->
+    <FAQ_mbbs />
+    <Testimonials />
+    <TopCountries />
+    <OurPartners />
+    <Contact />
+  </main>
+</MainLayout>

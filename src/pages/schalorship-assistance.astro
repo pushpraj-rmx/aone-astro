@@ -1,0 +1,66 @@
+---
+import Contact from "@components/Contact.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+
+const pageTitle = "Scholarship Assistance Services | A One Global";
+const pageDescription = "A One Global Consultants will help you access possibilities and provide professional advice on scholarship applications. Get in touch with us right now!.";
+const pageKeywords = "";
+const pageAuthor = "";
+---
+
+<!-- src/pages/index.astro -->
+<MainLayout title={pageTitle} description={pageDescription} keywords={pageKeywords} author={pageAuthor}>
+  <main>
+    <div class="container details">
+      <div class="row">
+        <div class="col-md-6 text-content">
+          <h1>Expert help and guidance : Scholarships for Abroad Study</h1>
+          <p style="text-align: justify">
+            <span style="font-weight: 400"
+              >A scholarship allows international students to reduce their
+              financial burden in a foreign country. Before applying for a
+              university, it is important to know the scholarship policy in
+              different abroad universities. We help students navigate the
+              process of finding and applying for scholarships. Our journey
+              starts with guiding them into identifying the potential
+              scholarships that align with the academic and career goal the
+              students.
+            </span>
+          </p>
+          <p style="text-align: justify">
+            <span style="font-weight: 400"
+              >Further, we also assist them with the scholarship application
+              process including the writing, reviewing, and editing of the
+              statement of purpose. Along with that we also provide advice on
+              highlighting the student’s qualifications and maintaining the
+              scholarship requirement throughout the semesters.</span
+            >
+          </p>
+          <a href="#book" class="custom-btn">Book an appointment</a>
+        </div>
+        <div class="col-md-6 img-div">
+          <img
+            width="433"
+            height="465"
+            src="https://theaoneglobal.com/wp-content/webp-express/webp-images/uploads/2021/12/08.-scholarship.png.webp"
+            class="attachment-full size-full"
+            alt=""
+            decoding="async"
+            srcset="
+              https://theaoneglobal.com/wp-content/webp-express/webp-images/uploads/2021/12/08.-scholarship.png.webp         433w,
+              https://theaoneglobal.com/wp-content/webp-express/webp-images/uploads/2021/12/08.-scholarship-279x300.png.webp 279w,
+              https://theaoneglobal.com/wp-content/webp-express/webp-images/uploads/2021/12/08.-scholarship-361x388.png.webp 361w
+            "
+            sizes="(max-width: 433px) 100vw, 433px"
+          />
+        </div>
+        <div class="col-12 notice-section">
+          <p>Your reward for excellence</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+        <Contact />
+    </div>
+  </main>
+</MainLayout>

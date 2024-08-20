@@ -1,0 +1,25 @@
+---
+import PageTitle from "@components/Page-Title.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+import Contact from "@components/Contact.astro";
+const pageTitle = "Contact Us";
+const pageDescription = "Contact Page | AONE Global";
+const pageKeywords = "contact, welcome, website";
+const pageAuthor = "Site Author";
+
+import pageBannerImg from "@assets/img/contact-banner.jpg"
+import Eligibility from "@components/Eligibility.astro";
+
+
+const pageBanner = { url: pageBannerImg.src };
+
+---
+
+<!-- src/pages/index.astro -->
+<MainLayout title={pageTitle} description={pageDescription} keywords={pageKeywords} author={pageAuthor}>
+  <PageTitle title="Eligibility Test" banner={pageBanner} />
+
+  <main>
+<Eligibility/>
+  </main>
+</MainLayout>

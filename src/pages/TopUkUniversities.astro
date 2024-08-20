@@ -1,0 +1,70 @@
+
+---
+import { Image } from "astro:assets";
+import universityWesternAus1 from "@assets/img/country-img/uni/UniEurope1.jpeg";
+import universityWesternAus2 from "@assets/img/country-img/uni/UniEurope2.jpeg";
+import universityWesternAus3 from "@assets/img/country-img/uni/UniEurope3.jpeg";
+import universityWesternAus4 from "@assets/img/country-img/uni/UniEurope4.jpeg";
+
+---
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-xxl-6 col-xl-6 col-lg-6 mb-4">
+        <h2>Top Universities in Europe</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xxl-3 col-xl-3 col-lg-6 mb-4">
+        <div class="card university-card">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <!-- <span class="badge badge-success">FastLane</span> -->
+              <i class="far fa-heart"></i>
+            </div>
+            <Image src={universityWesternAus1} class="card-img-top mb-3 px140" alt="The University of Melbourne" />
+
+            <p class="card-title">ETH Zürich</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xxl-3 col-xl-3 col-lg-6 mb-4">
+        <div class="card university-card">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <!-- <span class="badge badge-success">FastLane</span> -->
+              <i class="far fa-heart"></i>
+            </div>
+            <Image src={universityWesternAus2} class="card-img-top mb-3 px140" alt="The University of Queensland" />
+            <p class="card-title">The University of Edinburgh</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xxl-3 col-xl-3 col-lg-6 mb-4">
+        <div class="card university-card">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <!-- <span class="badge badge-success">FastLane</span> -->
+              <i class="far fa-heart"></i>
+            </div>
+            <Image src={universityWesternAus3} class="card-img-top mb-3 px140" alt="The University of New South Wales" />
+            <p class="card-title">Swiss Federal Institute of Technology Lausanne</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xxl-3 col-xl-3 col-lg-6 mb-4">
+        <div class="card university-card">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <!-- <span class="badge badge-success">FastLane</span> -->
+              <i class="far fa-heart"></i>
+            </div>
+            <Image src={universityWesternAus4} class="card-img-top mb-3 px140" alt="University of Western Australia" />
+            <p class="card-title">Imperial College London</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

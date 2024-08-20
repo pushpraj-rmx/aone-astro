@@ -1,0 +1,44 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import CTA from "@components/CTA.astro";
+import PageTitle from "@components/Page-Title.astro";
+import TopUsaCourses from "@components/TopUsaCourses.astro";
+import WhyChooseUSA from "@components/WhyChooseUSA.astro";
+import TopCountries from "../components/TopCountries.astro";
+import USAContent1 from "@components/USA-content1.astro";
+import OurPartners from "@components/OurPartners.astro";
+import FAQCopy3 from "@components/FAQ copy 3.astro";
+import Testimonials from "@components/Testimonials.astro";
+import Contact from "@components/Contact.astro";
+import LifeInUSA from "@components/LifeInUSA.astro";
+import TabComponent from "@components/TabComponent.astro";
+// images
+import pageBannerImg from "@assets/img/country-img/usa_bg.jpg";
+import Topusuniversities from "@components/topusuniversities.astro";
+
+const pageTitle = "Study in USA - Top Colleges, Fees Guide for Indian Students | Aone Global"; 
+const pageDescription = "Planning to Study in the USA takes help from Trusted USA education consultants at A One Global. Receive personalized guidance for studying in the United States.";
+const pageKeywords = "";
+const pageAuthor = "";
+const pageBanner = { url: pageBannerImg.src };
+---
+
+<!-- src/pages/index.astro -->
+<MainLayout title={pageTitle} description={pageDescription} keywords={pageKeywords} author={pageAuthor}>
+  <main>
+    <PageTitle title="Study in USA" banner={pageBanner} />
+    <USAContent1 />
+    <div class="section-divider"></div>
+    <CTA />
+    <Topusuniversities />
+    <TopUsaCourses /> 
+    <WhyChooseUSA />
+    <LifeInUSA />
+    <TabComponent />
+    <FAQCopy3 />
+    <Testimonials />
+    <TopCountries />
+    <OurPartners />
+    <Contact />
+  </main>
+</MainLayout>

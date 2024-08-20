@@ -1,0 +1,69 @@
+
+---
+import { Image } from "astro:assets";
+import universityWesternAus from "@assets/img/country-img/uni/western-australia.jpg";
+import universityQueensland from "@assets/img/country-img/uni/queensland.jpg";
+import universitySaouthWales from "@assets/img/country-img/uni/unsw.jpg";
+import melburnAustralia from "@assets/img/country-img/uni/melburn-australia.jpg";
+---
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-xxl-6 col-xl-6 col-lg-6 mb-4">
+        <h2>Top Universities in Australia</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xxl-3 col-xl-3 col-lg-6 mb-4">
+        <div class="card university-card">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span class="badge badge-success">FastLane</span>
+              <i class="far fa-heart"></i>
+            </div>
+            <Image src={melburnAustralia} class="card-img-top mb-3 px140" alt="The University of Melbourne" />
+
+            <p class="card-title">The University of Melbourne</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xxl-3 col-xl-3 col-lg-6 mb-4">
+        <div class="card university-card">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span class="badge badge-success">FastLane</span>
+              <i class="far fa-heart"></i>
+            </div>
+            <Image src={universityQueensland} class="card-img-top mb-3 px140" alt="The University of Queensland" />
+            <p class="card-title">The University of Queensland</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xxl-3 col-xl-3 col-lg-6 mb-4">
+        <div class="card university-card">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span class="badge badge-success">FastLane</span>
+              <i class="far fa-heart"></i>
+            </div>
+            <Image src={universitySaouthWales} class="card-img-top mb-3 px140" alt="The University of New South Wales" />
+            <p class="card-title">The University of New South Wales</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xxl-3 col-xl-3 col-lg-6 mb-4">
+        <div class="card university-card">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span class="badge badge-success">FastLane</span>
+              <i class="far fa-heart"></i>
+            </div>
+            <Image src={universityWesternAus} class="card-img-top mb-3 px140" alt="University of Western Australia" />
+            <p class="card-title">The University of Western Australia</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

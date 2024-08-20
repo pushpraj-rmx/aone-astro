@@ -1,0 +1,57 @@
+---
+import Image from "astro/components/Image.astro";
+import CanadaImg from "@assets/img/country-img/Frontenac-Castle-Old-Quebec-City-Canada.webp";
+---
+
+<section>
+  <div class="united-stats-area pt-120">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="united-states">
+            <style>
+              .text-center {
+                text-align: center !important;
+              }
+
+              .tab-pane {
+                display: none;
+              }
+              .tab-pane.active {
+                display: block;
+              }
+              .nav-tabs {
+                flex-direction: column;
+              }
+              .nav-tabs .nav-link {
+                border: 1px solid #dee2e6;
+                border-radius: 0.25rem;
+                margin-bottom: 0.5rem;
+              }
+              .nav-tabs .nav-link.active {
+                background-color: #007bff;
+                color: white;
+              }
+            </style>
+            <h2 class="united-states__title mb-15">Study in Europe</h2>
+            <!-- <Image src={CanadaImg} alt="" height="500"/> -->
+            <p class="mb-30">
+             Studying in Europe means going to universities or colleges there to learn new things. Europe has lots of cool schools where you can study different subjects. It's a chance to meet new people, explore different cultures, and have amazing experiences while you learn.
+            <p class="mb-25">
+              Students can learn about multicultural communities, engage in research on global issues, and take part in year-round outdoor activities. Europe draws students from all over the world who
+              are looking for high-quality education and exciting opportunities. Studying in Europe promises to be an enriching and unforgettable experience that will profoundly shape students’
+              futures.
+                        </p>
+          </div>
+          <div class="cta-wrap" style="display: flex; align-items: center; justify-content: start;">
+            <span class="col-6 theme-btn" style="margin-right: 20px;">Read More</span>
+            <span class="col-6 theme-btn2">Get Assistance</span>
+          </div>
+        </div>
+        <div class="col-6">
+          <Image src={CanadaImg} alt="Canada Image" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

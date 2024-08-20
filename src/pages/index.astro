@@ -1,0 +1,43 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import About2 from "../components/About2.astro";
+import Contact from "../components/Contact.astro";
+import Courses from "../components/CoursesHome.astro";
+import TopCountries from "../components/TopCountries.astro";
+import FAQ from "../components/FAQ.astro";
+import Hero from "../components/Hero.astro";
+import OurPartners from "../components/OurPartners.astro";
+import Services from "@components/Services.astro";
+import TeamAreaHome from "../components/TeamAreaHome.astro";
+import TeamHomeHeader from "../components/TeamHomeHeader.astro";
+import Testimonials from "../components/Testimonials.astro";
+// page specific meta data
+const pageTitle = "Study Abroad - Overseas Education Consultants | A One Global - India";
+const pageDescription = "Study Overseas Consultants in India - Study abroad with A One Global, we help students to study overseas in Australia, USA, Canada, UK & Europe.";
+const pageKeywords = "Study Abroad Consultants, abroad education consultants, overseas education,foreign education consultants, overseas education consultants, education consultant, foreign education consultants";
+const pageAuthor = "A One Global";
+const Canonical = "https://theaoneglobal.in/"
+---
+
+<MainLayout title={pageTitle} description={pageDescription} keywords={pageKeywords} author={pageAuthor} 
+  <main>
+    <Hero />
+    <Courses />
+    <div class="grey-soft-bg">
+      <Services />
+    </div>
+    <TopCountries />
+    <div class="grey-soft-bg">
+      <OurPartners />
+    </div>
+    <About2 />
+    <div class="grey-soft-bg">
+      <TeamHomeHeader />
+      <TeamAreaHome />
+    </div>
+    <div class="grey-soft-bg testimonials">
+      <Testimonials />
+    </div>
+    <FAQ />
+  </main>
+</MainLayout>

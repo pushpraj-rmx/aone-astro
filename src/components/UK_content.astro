@@ -1,0 +1,58 @@
+---
+import Image from "astro/components/Image.astro";
+import USAImg from "@assets/img/country-img/usa-place.jpg";
+---
+
+<section>
+  <div class="united-stats-area pt-120">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="united-states">
+            <style>
+              .text-center {
+                text-align: center !important;
+              }
+
+              .tab-pane {
+                display: none;
+              }
+              .tab-pane.active {
+                display: block;
+              }
+              .nav-tabs {
+                flex-direction: column;
+              }
+              .nav-tabs .nav-link {
+                border: 1px solid #dee2e6;
+                border-radius: 0.25rem;
+                margin-bottom: 0.5rem;
+              }
+              .nav-tabs .nav-link.active {
+                background-color: #007bff;
+                color: white;
+              }
+            </style>
+            <h2 class="united-states__title mb-15">Study in UK</h2>
+            <!-- <Image src={USAImg} alt="" height="500"/> -->
+            <p class="mb-30">
+                At A One Global Consultants, we are dedicated to helping you achieve your dreams of study in the UK! . UK provides an unparalleled learning experience with its renowned universities, diverse culture, and long history. The prestige of the UK's educational organizations is one of the main reasons to study there. Whether you're seeking a degree in business, engineering, or the arts, you'll have access to world-class faculty.
+
+            </p>
+            <p class="mb-25">
+                International students can gain a global perspective and interact with peers from a variety of backgrounds by participating in the multicultural society of the UK. There are numerous opportunities to interact with the local community and form friendships that will last a lifetime, such as cultural festivals and student organizations.
+
+            </p>
+          </div>
+          <div class="cta-wrap" style="display: flex; align-items: center; justify-content: start;">
+            <span class="col-6 theme-btn" style="margin-right: 20px;">Read More</span>
+            <span class="col-6 theme-btn2">Get Assistance</span>
+          </div>
+        </div>
+        <div class="col-6">
+          <Image src={USAImg} alt="USA Image" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

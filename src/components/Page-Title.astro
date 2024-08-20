@@ -1,0 +1,33 @@
+---
+export interface Props {
+  title: string;
+  banner: {
+    url: string;
+  };
+}
+
+const { title, banner } = Astro.props as Props;
+---
+
+<!-- page title area start -->
+<div class="page-title__area pt-110 page-title-bg" style={`background-image: url(${banner.url});`}>
+  <div class="container">
+    <div class="row">
+      <div class="col-xxl-12">
+        <div class="page__title-wrapper">
+          <h1 class="pb-100 besley-font" style="font-size: 50px;">{title}</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="breadccrumb-bg">
+    <div class="container">
+      <ul class="breadcrumb pt-20 pb-20">
+        <li class="bd-items"><a href="/">Home</a></li>
+        <li class="bd-items bdritems">|</li>
+        <li class="bd-items"><a href="">{title}</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<!-- page title area end -->

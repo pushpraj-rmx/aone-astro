@@ -1,0 +1,72 @@
+---
+import Contact from "@components/Contact.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+
+const pageTitle = "SOP Preparation Service | A One Global";
+const pageDescription = "With the assistance of A One Global Consultants, create appealing SOPs with our professional preparation services. Get in touch with us!";
+const pageKeywords = "";
+const pageAuthor = "";
+---
+
+<!-- src/pages/index.astro -->
+<MainLayout title={pageTitle} description={pageDescription} keywords={pageKeywords} author={pageAuthor}>
+  <div class="section-padding"></div>
+  <main>
+    <div class="container details">
+      <div class="row">
+        <div class="col-md-6 text-content">
+          <h1>Understanding Statement of Purpose (SOP)</h1>
+          <p style="text-align: justify">
+            <span style="font-weight: 400"
+              >The admission panel of international universities requires the
+              candidates to submit a Statement of Purpose (SOP) essay
+              discussing their preferred course and how it contributes to
+              their professional path and career goal in the future. This
+              essay must be able to provide insights into the beliefs, goals,
+              as well as vision of the candidates to the admission committee.
+              It allows the applicants to portray their strong personality,
+              dedication, and passion to the committee which can help enhance
+              even the position of weak academic profiles of people with
+              mentions of specific ambitions.</span
+            >
+          </p>
+          <h2></h2>
+          <h2>Expert Guidance on your SOP</h2>
+          <p style="text-align: justify">
+            <span style="font-weight: 400"
+              >Our experts at A One Global assist the applicants in writing
+              their SOP in a structural manner that can impress the admission
+              committee. We also help them in the editing process after a
+              critical review of the content to reflect the actual personal
+              and academic profile of the applicants in a positive way to the
+              university.</span
+            >
+          </p>
+          <a href="#book" class="custom-btn">Book an appointment</a>
+        </div>
+        <div class="col-md-6 img-div">
+          <img
+            width="433"
+            height="465"
+            src="https://theaoneglobal.com/wp-content/webp-express/webp-images/uploads/2021/12/01.-SOP.png.webp"
+            class="attachment-full size-full"
+            alt=""
+            decoding="async"
+            srcset="
+              https://theaoneglobal.com/wp-content/webp-express/webp-images/uploads/2021/12/01.-SOP.png.webp         433w,
+              https://theaoneglobal.com/wp-content/webp-express/webp-images/uploads/2021/12/01.-SOP-279x300.png.webp 279w,
+              https://theaoneglobal.com/wp-content/webp-express/webp-images/uploads/2021/12/01.-SOP-361x388.png.webp 361w
+            "
+            sizes="(max-width: 433px) 100vw, 433px"
+          />
+        </div>
+        <div class="col-12 notice-section">
+          <p>It is the courage to continue that counts</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <Contact />
+    </div>
+  </main>
+</MainLayout>

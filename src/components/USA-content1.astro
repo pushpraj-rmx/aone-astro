@@ -1,0 +1,58 @@
+---
+import Image from "astro/components/Image.astro";
+import USAImg from "@assets/img/country-img/usa-place.jpg";
+---
+
+<section>
+  <div class="united-stats-area pt-120">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="united-states">
+            <style>
+              .text-center {
+                text-align: center !important;
+              }
+
+              .tab-pane {
+                display: none;
+              }
+              .tab-pane.active {
+                display: block;
+              }
+              .nav-tabs {
+                flex-direction: column;
+              }
+              .nav-tabs .nav-link {
+                border: 1px solid #dee2e6;
+                border-radius: 0.25rem;
+                margin-bottom: 0.5rem;
+              }
+              .nav-tabs .nav-link.active {
+                background-color: #007bff;
+                color: white;
+              }
+            </style>
+            <h2 class="united-states__title mb-15">Study in USA</h2>
+            <!-- <Image src={USAImg} alt="" height="500"/> -->
+            <p class="mb-30">
+              With our expert guidance, embark on your educational journey in the United States! USA offers a dynamic learning environment unlike any other, with vibrant campuses and iconic universities. You can easily navigate the complicated process of study in USA  with us. We are here to help you every step of the way, whether you want to work in business, the arts, STEM fields, or the humanities. Our team is committed to assisting you in achieving your academic objectives, from selecting the appropriate university to securing your visa.
+
+            </p>
+            <p class="mb-25">
+              Study in USA opens up a world of possibilities, whether you want to live in bustling cities, carry out ground-breaking research, or pursue your passion. Let us be your reliable partner in making your dreams come true. Immerse yourself in the diverse culture, innovation, and academic excellence of the United States and join the ranks of global scholars. Start your excursion to progress today!
+
+            </p>
+          </div>
+          <div class="cta-wrap" style="display: flex; align-items: center; justify-content: start;">
+            <span class="col-6 theme-btn" style="margin-right: 20px;">Read More</span>
+            <span class="col-6 theme-btn2">Get Assistance</span>
+          </div>
+        </div>
+        <div class="col-6">
+          <Image src={USAImg} alt="USA Image" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

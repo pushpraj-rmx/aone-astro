@@ -1,0 +1,68 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Head from "../components/Head.astro";
+import FooterAnimation from "../components/FooterAnimation.astro";
+
+import "@styles/animate.min.css";
+import "@styles/backToTop.css";
+import "@styles/bootstrap.min.css";
+import "@styles/custom-animation.css";
+import "@styles/default.css";
+import "@styles/fontawesome.min.css";
+import "@styles/global.css";
+import "@styles/magnific-popup.css";
+import "@styles/main.css";
+import "@styles/meanmenu.css";
+import "@styles/nice-select.css";
+import "@styles/owl.carousel.min.css";
+import "@styles/slick.css";
+import "@styles/swiper-bundle.css";
+import "@styles/venobox.min.css";
+
+export interface Props {
+  title?: string;
+  description?: string;
+  keywords?: string;
+  author?: string;
+}
+
+const { title, description, keywords, author } = Astro.props;
+import PopupForm from "@components/PopupForm.astro";
+---
+
+<!doctype html>
+<html lang="en">
+  <Head {title} {description} {keywords} {author} />
+
+  <meta name="robots" content="index, follow" />
+
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WML2LHMZ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <PopupForm />
+    <Header />
+      <slot />
+    <Footer />
+    <!-- <FooterAnimation /> -->
+    <script defer src="/scripts/vendor/jquery.min.js"></script>
+    <script defer src="/scripts/bootstrap.bundle.min.js"></script>
+    <script defer src="/scripts/isotope.pkgd.min.js"></script>
+    <script defer src="/scripts/slick.min.js"></script>
+    <script defer src="/scripts/swiper-bundle.js"></script>
+    <script defer src="/scripts/jquery.nice-select.min.js"></script>
+    <script defer src="/scripts/venobox.min.js"></script>
+    <script defer src="/scripts/backToTop.js"></script>
+    <script defer src="/scripts/jquery.meanmenu.min.js"></script>
+    <script defer src="/scripts/imagesloaded.pkgd.min.js"></script>
+    <script defer src="/scripts/waypoints.min.js"></script>
+    <script defer src="/scripts/jquery.counterup.min.js"></script>
+    <script defer src="/scripts/owl.carousel.min.js"></script>
+    <script defer src="/scripts/jquery.magnific-popup.min.js"></script>
+    <script defer src="/scripts/ajax-form.js"></script>
+    <script defer src="/scripts/wow.min.js"></script>
+    <script defer src="/scripts/main.js"></script>
+  </body>
+</html>

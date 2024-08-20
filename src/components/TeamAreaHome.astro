@@ -1,0 +1,94 @@
+---
+import Image from "astro/components/Image.astro";
+
+import teamImage from "@assets/img/team.webp";
+import emilyImage from "@assets/img/team/02-Emily.png-1.webp";
+import samratImage from "@assets/img/team/03-Samrat.png-1.webp";
+import nawarajImage from "@assets/img/team/04-Nawaraj.png-1.webp";
+import narayanImage from "@assets/img/team/05-Narayan-1.png-1.webp";
+import ujjwalImage from "@assets/img/team/08-Ujjwal-1.png.webp";
+import kapilImage from "@assets/img/team/09-Kapil-1.png.webp";
+import sagarImage from "@assets/img/team/12-Sagar-1.png.webp";
+import bijayImage from "@assets/img/team/13-Bijay-1.png.webp";
+import laxmanImage from "@assets/img/team/14-Laxman-1.png.webp";
+import madhuImage from "@assets/img/team/17-Madhu-1.png.webp";
+import monikaImage from "@assets/img/team/16-Monica-1.png.webp";
+import kusumImage from "@assets/img/team/18-Kusum-1.png.webp";
+import kopilaImage from "@assets/img/team/19-Kopila-1.png.webp";
+import ushaImage from "@assets/img/team/20-Usha-1.png.webp";
+import suprimaImage from "@assets/img/team/23-Suprima-1.png.webp";
+import rikshyaImage from "@assets/img/team/24-Rikshya-1.png.webp";
+import amanImage from "@assets/img/team/Aman.png.webp";
+import forWebImage from "@assets/img/team/For-Web.png.webp";
+import pusparajImage from "@assets/img/team/Pusparaj.png.webp";
+import rahinaImage from "@assets/img/team/Rahina.png.webp";
+import seemaImage1 from "@assets/img/team/Seema.png-1.webp";
+import seemaImage2 from "@assets/img/team/seema.webp";
+
+// Team members data
+const teamMembers = [
+  {
+    name: "JHABANATH ARYAL (BIBEK)",
+    designation: "CEO/ Director Brisbane/ Justice of Peace",
+    image: forWebImage,
+    delay: "0.3s",
+    socials: ["facebook-f", "twitter", "instagram", "youtube"],
+  },
+  {
+    name: "EMILY WANG",
+    designation: "Registered Migration Agent(MARN number 1790314)",
+    image: emilyImage,
+    delay: "0.5s",
+    socials: ["facebook-f", "twitter", "instagram", "youtube"],
+  },
+  {
+    name: "SAMRAT BAHADUR SHAH",
+    designation: "Director- Kathmandu/Consultant",
+    image: samratImage,
+    delay: "0.7s",
+    socials: ["facebook-f", "twitter", "instagram", "youtube"],
+  },
+  {
+    name: "NAWRAJ GYAWALI",
+    designation: "Country Director",
+    image: nawarajImage,
+    delay: "0.9s",
+    socials: ["facebook-f", "twitter", "instagram", "youtube"],
+  }
+  ];
+---
+
+<!-- Team area start -->
+<section class="team-area grey-soft-bg pt-110 pb-80">
+  <div class="container">
+    <div class="row">
+      {
+        teamMembers.map((member) => (
+          <div class={`col-xxl-3 col-xl-3 col-lg-3 col-md-6 wow fadeInUp`} data-wow-delay={member.delay} style={{ visibility: "visible", animationDelay: member.delay, animationName: "fadeInUp" }}>
+            <div class="team text-center mb-30">
+              <div class="team__thumb team__thumb-2 mb-25">
+                <Image src={member.image} alt={member.name} />
+                <div class="team__thumb-info">
+                  <div class="team-social">
+                    {member.socials.map((social) => (
+                      <a href="#">
+                        <i class={`fab fa-${social}`} />
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              </div>
+              <div class="team__text">
+                <h3 class="team__text-title" style={{ textTransform: "uppercase" }}>
+                  <a href="">{member.name}</a>
+                </h3>
+                <span>{member.designation}</span>
+              </div>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
+<!-- Team area end -->

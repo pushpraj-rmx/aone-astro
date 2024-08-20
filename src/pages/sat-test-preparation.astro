@@ -1,0 +1,359 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import PageTitle from "@components/Page-Title.astro";
+
+import Image from "astro/components/Image.astro";
+import pageBannerImg from "@assets/img/country-img/australia_bg.jpg";
+import courseImg from "@assets/img/course/course1.jpeg";
+import satImg from "@assets/img/course/sat-test.jpg";
+import Contact from "@components/Contact.astro";
+
+const pageTitle = "Best SAT Test Preparation | A One Global";
+const pageDescription = "Get ready for the SAT exam with the best SAT test preparation resources at A One Global. Excel in your SAT with our guidance";
+const pageKeywords = "";
+const pageAuthor = "";
+
+const pageBanner = { url: courseImg.src };
+---
+
+<!-- src/pages/index.astro -->
+<MainLayout
+  title={pageTitle}
+  description={pageDescription}
+  keywords={pageKeywords}
+  author={pageAuthor}
+>
+  <main>
+    <PageTitle title={pageTitle} banner={pageBanner} />
+
+    <div class="businnes-area pt-40 pb-90">
+      <div class="container">
+        <div class="row">
+          <div class="col-xxl-12 col-xl-12 col-lg-12">
+            <div class="sidebar__deatils">
+              <div class="visa-details">
+                <div class="visa-deatils__thumb mb-35"></div>
+                <div class="row">
+                  <div class="col-6">
+                    <h3 class="course-detils__title mb-15">
+                      Best SAT Classes in India to Succeed in 2024
+                    </h3>
+                    <p class="mb-35">
+                      SAT preparation can be daunting especially if the
+                      syllables are not smartly devised to make student
+                      understand the question in the easiest way possible and
+                      answer them promptly. It must not be confused with regular
+                      English language proficiency test as it is used by
+                      colleges (mostly US based) to compare applicants and often
+                      grant scholarship or grants based upon the score. It is
+                      one of the most difficult tests that measures a high
+                      school pass out students readiness to join Universities.
+                    </p>
+                    <p class="mb-35">
+                      Classes with A One will equip you with the skills and
+                      confidence needed to tackle all sections of the SAT.
+                      Here’s what our comprehensive course offers:
+                    </p>
+                    <ul>
+                      <li>
+                        <strong>Comprehensive Coverage:</strong> We address all three
+                        essential skills: Verbal, Written, and Mathematical skills.
+                        Intensive classroom practice will be done with surplus materials
+                        provided for students to practice outside the class.
+                      </li>
+                      <li>
+                        <strong>Vocabs, grammar and mathematical tricks:</strong
+                        > Vocabularies are the most important element in the SAT.
+                        Our course are devised to enhances your academic vocabulary,
+                        and their usage. It increases your chances of achieving higher
+                        scores by being able to solve the questions within the limited
+                        time period.
+                      </li>
+                      <li>
+                        <strong>Effective Tips and Strategies:</strong> Tips and
+                        tricks are highly encouraged here as your traditional method
+                        of finding correct answer might not work for you. Remember
+                        correct answers are more important than how actually the
+                        answers are devised in this test. So, even a minor tips or
+                        a cleaver trick can help you achieve higher mark in your
+                        test so don’t hesitate to reach out the right mentor for
+                        this test.
+                      </li>
+                      <li>
+                        <strong>Authentic Materials:</strong> All teaching materials
+                        we provide are authentic as provided by College Board that
+                        conduct the test or from the official publisher of the test
+                        providers. All the learning-teaching activities are based
+                        on official SAT test materials. Score Improvement: With our
+                        guidance and your hardwork coupled with our resources you’ll
+                        witness significant score improvements in a short period..
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-6">
+                    <Image src={satImg} alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="row g-0">
+                <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6">
+                  <div class="course__items d-flex align-items-center">
+                    <div class="course__items-icon">
+                      <i class="far fa-clock"></i>
+                    </div>
+                    <div class="course__items-dtext">
+                      <span>Duration</span>
+                      <h4>Approx 12 weeks</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6">
+                  <div class="course__items d-flex align-items-center">
+                    <div class="course__items-icon">
+                      <i class="fas fa-users"></i>
+                    </div>
+                    <div class="course__items-dtext">
+                      <span>Classes</span>
+                      <h4>Approx 28 Classes</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6">
+                  <div class="course__items d-flex align-items-center">
+                    <div class="course__items-icon">
+                      <i class="fab fa-wpforms"></i>
+                    </div>
+                    <div class="course__items-dtext">
+                      <span>Certificates</span>
+                      <h4>Course Certificates</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6">
+                  <div class="course__items d-flex align-items-center">
+                    <div class="course__items-icon">
+                      <i class="fas fa-coins"></i>
+                    </div>
+                    <div class="course__items-dtext">
+                      <span>Cost</span>
+                      <h4>$39/month</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="course-ieltes-txt mt-60">
+                <h4 class="mb-20">Course Curriculum</h4>
+                <p>
+                  For the last 25 years, We have helped students, business
+                  persons, tourists, clients with medical needs. There are many
+                  variations of passages of Lorem Ipsum available, but the
+                  majority have suffered alteration
+                </p>
+              </div>
+              <div class="course-module-area pt-15">
+                <div class="row">
+                  <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 mb-30">
+                    <div class="course-module">
+                      <h4 class="course-module__title mb-20">
+                        <i class="far fa-hand-point-right"></i> Reading
+                      </h4>
+                      <div class="course-module__text">
+                        <p><strong></strong>
+                            The SAT Reading section has 65 minutes to complete 52 multi-choice questions. All the questions come from 5 evidence-based passages, and examiners are asked to analyze the information in the given passages before answering the questions. Passage can be 500-700 words in length.
+
+                            Passages can either be in paragraphs or coupled with diagrams. The scope of passages is generally literature, social science, economics, psychology, sociology and history.
+                        </p></strong>
+                        <p><strong>3 categories of SAT Reading:</strong></p>
+                        <ul>
+                            <ol>
+                                <li style="list-style-type: disc;">Factual questions are derived from the core context of the passage.
+                                    
+                                  </li>
+                                <li style="list-style-type: disc;">Rhetoric questions are made to understand the tone and style conveyed in the passage.</li>
+                                <li style="list-style-type: disc;">  Synthesis questions are based on drawing a conclusion or connecting the plots between diagrams.</li>
+                            </ol>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 mb-30">
+                    <div class="course-module">
+                      <h4 class="course-module__title mb-20">
+                        <i class="far fa-hand-point-right"></i> SAT Writing and Language
+                      </h4>
+                      <div class="course-module__text">
+                        <p>
+                            The SAT Mathematics section covers 80 minutes with comprises 58 questions to answer. Among all questions 75% are multiple-choice and in the other 25% of questions, students must solve problems and jot down answers. When compared to other sections of the SAT Exam, the Math section is specially designed to assess candidates’ knowledge of math concepts and the ability to apply those to solve real-time problems.                        </p>
+                        <p><strong>Similarly, the diagram writing covers graphs, charts, and infographics and is based on given topics:</strong></p>
+
+                        <ul>
+                            <ol>
+                                <li style="list-style-type: disc;">History
+                                    
+                                  </li>
+                                <li style="list-style-type: disc;">Science.</li>
+                                <li style="list-style-type: disc;">  Career</li>
+                                <li style="list-style-type: disc;">  Social Studies</li>
+                                <li style="list-style-type: disc;">  Humanities</li>
+                            </ol>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 mb-30">
+                    <div class="course-module">
+                      <h4 class="course-module__title mb-20">
+                        <i class="far fa-hand-point-right"></i>  Mathematics Section
+                      <div class="course-module__text">
+                        <p>
+                            The SAT Mathematics section covers 80 minutes with comprises 58 questions to answer. Among all questions 75% are multiple-choice and in the other 25% of questions, students must solve problems and jot down answers. When compared to other sections of the SAT Exam, the Math section is specially designed to assess candidates’ knowledge of math concepts and the ability to apply those to solve real-time problems.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="course-video mb-40">
+                <img src="assets/img/course/courseplay.jpg" alt="" />
+                <div class="course-video_btn">
+                  <a
+                    class="course-btn popup-video"
+                    href="https://www.youtube.com/watch?v=pNje3bWz7V8"
+                    ><i class="flaticon-play-button-1"></i></a
+                  >
+                </div>
+              </div>
+              <div class="course-ieltes-txt mb-10">
+                <h4 class="mb-15">
+                    Understanding SAT:
+                </h4>
+                <p><strong>The SAT (Scholastic Assessment Test) is a standardized test widely used for college admissions in the United States and Canada.</strong></p>
+                <ul class="necessary-link mb-40">
+                    <p><strong>Test Format</strong></p>
+                  <li>
+                    <i class="fas fa-check-square"></i>Evidence-Based Reading & Writing (assess reading comprehension and grammar questions).
+                  </li>
+                  <li>
+                    <i class="fas fa-check-square"></i>Maths (assess quantitative reasoning skills.
+                  </li>
+                  <p>Previously available subject specific test has been discontinued from 2021.</p>
+                  <strong>Optional Essay:</strong> 
+                  <li>
+                    <i class="fas fa-check-square"></i>While the essay section is optional, it is recommended that all students take it, as some colleges require it during the application process. </li>
+                  <p><strong>Scoring:</strong></p>
+                  <li>
+                    <i class="fas fa-check-square"></i>RW and Math sections are scored on a range of 200-800 each.
+                  </li>
+                  <li>
+                    <i class="fas fa-check-square"></i>The SAT Essay is scored on a range of 2-8.
+                  
+                  </li>
+                  <p><strong>Test Duration:</strong></p>
+                  <li>
+                    <i class="fas fa-check-square"></i>Without the essay section, the total test duration is 3 hours and 15 minutes, including breaks.
+                  </li>
+                  <li>
+                    <i class="fas fa-check-square"></i>The essay section adds an additional 50 minutes.
+                  
+                  </li>
+
+                  <p><strong>Test Format and Strategies:</strong></p>
+                  <li>
+                    <i class="fas fa-check-square"></i>Most SAT questions are multiple-choice, but some math questions require you to write down the answer.
+                  </li>
+                  <li>
+                    <i class="fas fa-check-square"></i>There is no negative marking, so it’s better to guess if you’re unsure.
+                  
+                  </li>
+                  <li><i class="fas fa-check-square"></i>Let’s ace the SAT Reading section with 65 minutes to complete 52 multiple-choice questions!</li>
+                  <li><i class="fas fa-check-square"></i>From spring 2023, SAT for international schools (including India) will be of two hours and paper based SAT will be completely replaced by computer based digital SAT</li>
+                  
+                </ul>
+              </div>
+
+          
+            
+         
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- abbrand-area start -->
+    <div
+      class="abbrand-area pb-120 wow fadeInUp"
+      data-wow-delay="0.3s"
+      style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;"
+    >
+      <div class="container">
+        <div class="abbrand-active owl-carousel">
+          <div class="abbrand-img">
+            <a href=""
+              ><img src="assets/img/testimonial/1.png" alt="" /></a
+            >
+          </div>
+          <div class="abbrand-img">
+            <a href=""
+              ><img src="assets/img/testimonial/2.png" alt="" /></a
+            >
+          </div>
+          <div class="abbrand-img">
+            <a href=""
+              ><img src="assets/img/testimonial/3.png" alt="" /></a
+            >
+          </div>
+          <div class="abbrand-img">
+            <a href=""
+              ><img src="assets/img/testimonial/4.png" alt="" /></a
+            >
+          </div>
+          <div class="abbrand-img">
+            <a href=""
+              ><img src="assets/img/testimonial/5.png" alt="" /></a
+            >
+          </div>
+          <div class="abbrand-img">
+            <a href=""
+              ><img src="assets/img/testimonial/4.png" alt="" /></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <Contact />
+
+    <script>
+      // document.addEventListener("DOMContentLoaded", function () {
+      //   // Function to handle tab switching
+      //   function handleTabSwitch(tabButtons, tabPanes) {
+      //     tabButtons.forEach((button) => {
+      //       button.addEventListener("click", function (event) {
+      //         event.preventDefault();
+
+      //         // Remove active class from all tab buttons and tab panes
+      //         tabButtons.forEach((btn) => btn.classList.remove("active"));
+      //         tabPanes.forEach((pane) => pane.classList.remove("active"));
+
+      //         // Add active class to the clicked tab button
+      //         button.classList.add("active");
+
+      //         // Add active class to the corresponding tab pane
+      //         const targetPaneId = button.getAttribute("href").substring(1);
+      //         const targetPane = document.getElementById(targetPaneId);
+      //         targetPane.classList.add("active");
+      //       });
+      //     });
+      //   }
+
+      //   // Handle main country tabs
+      //   const mainTabButtons = document.querySelectorAll("#mainTabs .nav-link");
+      //   const mainTabPanes = document.querySelectorAll(".tab-content .tab-pane");
+      //   handleTabSwitch(mainTabButtons, mainTabPanes);
+      // });
+    </script>
+  </main>
+</MainLayout>

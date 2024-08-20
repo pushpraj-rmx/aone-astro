@@ -1,0 +1,88 @@
+/* GLOBAL.CSS */
+
+.brand-color {
+  color: #ed2f37 !important;
+}
+
+.brand-color-bg {
+  background-color: #ed2f37 !important;
+}
+
+.brand-color2 {
+  color: #0d5ba4 !important;
+}
+
+.brand-color2-bg {
+  background-color: #0d5ba4 !important;
+}
+
+.page-title-bg {
+  background-image: url(../assets/img/page-title-bg.jpg);
+}
+
+.team_bg {
+  background-image: url(../assets/img/team.webp);
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.fas .fa-headset .brand-color2 .font-bold {
+  font-weight: bold;
+}
+
+.nav-link.active {
+  background-color: #ed2f37 !important;
+}
+
+.calltoaction-area {
+  background-image: url(../assets/img/course/ctaImg.png);
+}
+
+img.px140 {
+  width: 140px;
+  height: 140px;
+  text-align: center;
+}
+
+
+.faqfrm__visa.custom {
+  background-color: transparent;
+padding: 0;
+margin: 0;
+}
+
+.faqfrm__visa.custom input {
+  background-color: transparent;
+  color: white;
+  border: 1px solid #f5f5f5;
+  padding: 10px;
+  margin: 10px 0;
+  height: 38px;
+}
+
+.faqfrm__visa.custom button{
+width: 100%;
+line-height: 30px;
+padding: 0px;
+height: 38px;
+
+}
+
+.faqfrm__visa.custom .theme-btn:hover {
+  background-color: #af0009 !important;
+}
+
+.grey-soft-bg.testimonials {
+  background-color: #f5f5f5;
+
+}
+
+.grey-soft-bg.testimonials .owl-dots {
+  display: none;
+}
+
+.section-padding {
+  padding: 40px 0;
+}

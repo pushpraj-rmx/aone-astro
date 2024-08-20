@@ -1,0 +1,44 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import CTA from "@components/CTA.astro";
+import PageTitle from "@components/Page-Title.astro";
+import pageBannerImg from "@assets/img/country-img/australia_bg.jpg";
+import TopAustraliaCourses from "@components/TopAustraliaCourses.astro";
+import WhyChooseAus from "@components/WhyChooseAus.astro";
+import TopCountries from "../components/TopCountries.astro";
+import AustraliaContent1 from "@components/Australia-content1.astro";
+import OurPartners from "@components/OurPartners.astro";
+import FAQCopy2 from "@components/FAQ copy 2.astro";
+import Testimonials from "@components/Testimonials.astro";
+import Contact from "@components/Contact.astro";
+import LifeInAustralia from "@components/Life_in_Australia.astro";
+import TabComponentAustralia from "@components/TabComponentAustralia.astro";
+import TopAustraliaUniversities from "@components/TopAustraliaUniversities.astro";
+
+const pageTitle = "Study in Australia: Essential Guide for International Students | AOne Global";
+const pageDescription = " Everything you need to know about study in Australia as an international student, get expert guidance on top Universities, Courses, Scholarships, Visa, fees and Admission Process";
+const pageKeywords = "";
+const pageAuthor = "";
+
+const pageBanner = { url: pageBannerImg.src };
+---
+
+<!-- src/pages/index.astro -->
+<MainLayout title={pageTitle} description={pageDescription} keywords={pageKeywords} author={pageAuthor}>
+  <main>
+    <PageTitle title="Study in Australia" banner={pageBanner} />
+    <AustraliaContent1 />
+    <div class="section-divider"></div>
+    <CTA />
+    <TopAustraliaUniversities />
+    <TopAustraliaCourses />
+    <WhyChooseAus />
+    <LifeInAustralia />
+    <TabComponentAustralia />
+    <FAQCopy2 />
+    <Testimonials />
+    <TopCountries />
+    <OurPartners />
+    <Contact />
+  </main>
+</MainLayout>
