@@ -28,6 +28,7 @@ export interface Props {
 }
 
 const { title, description, keywords, author } = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 import PopupForm from "@components/PopupForm.astro";
 ---
 
@@ -36,7 +37,7 @@ import PopupForm from "@components/PopupForm.astro";
   <Head {title} {description} {keywords} {author} />
 
   <meta name="robots" content="index, follow" />
-
+  <link rel="canonical" href={canonicalURL} />
 
   <body>
     <!-- Google Tag Manager (noscript) -->
